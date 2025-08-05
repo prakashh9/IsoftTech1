@@ -53,7 +53,7 @@ export const HeroSection1 = (): JSX.Element => {
         {/* Right Side - Image */}
         <div className="hidden md:flex justify-center lg:justify-end">
           <img
-            src="/public/gdsgsggs.png"
+            src="/gdsgsggs.png"
             alt="Team Working"
             className="w-[300px] md:w-[400px] lg:w-[680px] h-auto rounded-xl object-cover shadow-xl hover-scale transition-all duration-500"
           />

@@ -51,7 +51,7 @@ export const InnovationQuoteSection = (): JSX.Element => {
       <div className="w-[80%] max-w-6xl mx-auto relative">
         {/* Opening Quote Image */}
         <img
-          src="/public/quote-red.png"
+          src="/quote-red.png"
           alt="Opening quote"
           className="absolute top-0 left-0 w-8 sm:w-8 lg:w-12 animate-slide-in-left hover-scale transition-all duration-300"
         />
@@ -83,7 +83,7 @@ export const InnovationQuoteSection = (): JSX.Element => {
 
         {/* Closing Quote Image */}
         <img
-          src="/public/quote-red2.png"
+          src="/quote-red2.png"
           alt="Closing quote"
           className="absolute bottom-0 right-2 w-8 sm:w-8 lg:w-12 rotate-180 animate-slide-in-right hover-scale transition-all duration-300"
         />
