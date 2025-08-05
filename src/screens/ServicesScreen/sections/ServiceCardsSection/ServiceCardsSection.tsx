@@ -43,7 +43,7 @@ export const ServiceSection = (): JSX.Element => {
         "Understanding the project requirements, goals, and user needs",
       iconSrc: "/business--products-chart-loap.svg",
       bgGradient:
-        "bg-[linear-gradient(314deg,rgba(237,28,36,1)_0%,rgba(76,15,15,1)_100%),linear-gradient(281deg,rgba(0,32,253,1)_0%,rgba(135,58,227,1)_89%)]",
+        "bg-[linear-gradient(317deg,rgba(60,60,60,1)_0%,rgba(26,26,26,1)_100%)]",
     },
   ];
 

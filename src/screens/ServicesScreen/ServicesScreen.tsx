@@ -19,9 +19,11 @@ export const ServicesSection = (): JSX.Element => {
         <div className="relative w-full">
           <div className="relative">
             <div className="absolute w-[800px] h-[800px] top-[400px] right-[-400px] rounded-[400px] blur-[200px] bg-[linear-gradient(0deg,rgba(115,10,10,1)_0%,rgba(115,10,10,1)_100%)] opacity-50" />
+             <div className="relative z-10 ">
             <HeroSection />
             <HeroSection1 />
             <FeaturesSection />
+            </div>
           </div>
 
           <div className="relative w-full mt-16">

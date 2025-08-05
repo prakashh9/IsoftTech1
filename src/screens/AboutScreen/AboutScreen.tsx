@@ -18,6 +18,7 @@ export const AboutUs = (): JSX.Element => {
     <div className="bg-[#0b0b0b]  w-full">
       <div className="flex flex-col items-center w-full">
         <div className="bg-[#0b0b0b] w-full max-w-[1440px] relative px-4 sm:px-6 lg:px-8">
+          
           <div className="relative w-full">
             {/* Hero and About section */}
             <HeroSection />

@@ -41,7 +41,7 @@ export const ServicesSection = (): JSX.Element => {
           <img
             className="absolute w-full h-full top-0 left-0"
             alt="Glass overlay"
-            src="/glass.png"
+            src="/glass-1.png"
           />
         </div>
 

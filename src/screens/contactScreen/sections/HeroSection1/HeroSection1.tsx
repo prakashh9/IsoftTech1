@@ -26,36 +26,42 @@ export const HeroSection = (): JSX.Element => {
         </div>
 
         {/* Navbar Container */}
-        <div className="flex-1 min-w-[240px] h-[55px] sm:h-[60px] bg-[#ffffff0d] border border-[#ffffff1a] rounded-[40px] backdrop-blur-[30px] flex items-center justify-end px-4 sm:px-6">
-          {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-4 lg:gap-6">
-            {menuItems.map((item, index) => (
-              <React.Fragment key={item.name}>
-                <Link
-                  to={item.path}
-                  className={`text-sm font-medium font-poppins transition-all duration-300 ${
-                    location.pathname === item.path
-                      ? "text-white font-semibold"
-                      : "text-[#ffffff80] hover:text-white"
-                  }`}
-                >
-                  {item.name}
-                </Link>
-                {index < menuItems.length - 1 && (
-                  <ChevronRight size={18} className="text-[#ffffff60]" />
-                )}
-              </React.Fragment>
-            ))}
-          </div>
+        <>
+  {/* Mobile: Show only the toggle button */}
+  <div className="flex sm:hidden justify-end items-center h-[55px] px-4">
+    <button
+      className="text-white ml-auto"
+      onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+    >
+      {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+    </button>
+  </div>
 
-          {/* Mobile Toggle */}
-          <button
-            className="md:hidden text-white ml-auto"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+  {/* Tablet & Desktop: Full navbar container */}
+  <div className="hidden sm:flex flex-1 min-w-[240px] h-[60px] bg-[#ffffff0d] border border-[#ffffff1a] rounded-[40px] backdrop-blur-[30px] items-center justify-end px-6">
+    {/* Desktop Menu */}
+    <div className="hidden md:flex items-center gap-4 lg:gap-6">
+      {menuItems.map((item, index) => (
+        <React.Fragment key={item.name}>
+          <Link
+            to={item.path}
+            className={`text-sm font-medium font-poppins transition-all duration-300 ${
+              location.pathname === item.path
+                ? "text-white font-semibold"
+                : "text-[#ffffff80] hover:text-white"
+            }`}
           >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
+            {item.name}
+          </Link>
+          {index < menuItems.length - 1 && (
+            <ChevronRight size={18} className="text-[#ffffff60]" />
+          )}
+        </React.Fragment>
+      ))}
+    </div>
+  </div>
+</>
+
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
