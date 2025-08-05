@@ -1,0 +1,1 @@
+export { InnovationQuoteSection } from "./InnovationQuoteSection";
