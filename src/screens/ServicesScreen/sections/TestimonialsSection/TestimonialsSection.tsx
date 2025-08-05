@@ -1,4 +1,5 @@
 //import React from "react";
+import { Link } from "react-router-dom";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
 
@@ -28,7 +29,7 @@ export const TestimonialsSection = (): JSX.Element => {
         with Us Today
       </span>
     </h2>
-
+   <Link to="/contact">
     <Button
       className="px-6 py-3 bg-neutral-900 rounded-[10px] shadow-[inset_4px_4px_10px_#ffffff4c] backdrop-blur-[10px] button-hover animate-zoom-in animate-delay-600 hover-bounce-text"
       size="lg"
@@ -37,6 +38,7 @@ export const TestimonialsSection = (): JSX.Element => {
         Get Started
       </span>
     </Button>
+    </Link>
   </div>
 </div>
 
