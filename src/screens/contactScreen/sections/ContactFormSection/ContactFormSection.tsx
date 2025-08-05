@@ -14,8 +14,10 @@ export const ContactFormSection = (): JSX.Element => {
     phone: "",
     message: ""
   });
-
+  
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false); // ✅ New state for success message
+
 
   const validateEmail = (email: string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -75,18 +77,18 @@ export const ContactFormSection = (): JSX.Element => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    if (!validateForm()) {
+    if (!validateForm()) 
       return;
-    }
-
-    setIsSubmitting(true);
     
-    // Simulate API call
+
+   setIsSubmitting(true);
+    setShowSuccess(false); // Reset success before new submit
+
     setTimeout(() => {
-      alert("Form submitted successfully!");
-      setFormData({ name: "", email: "", phone: "", message: "" });
       setIsSubmitting(false);
-    }, 2000);
+      setFormData({ name: "", email: "", phone: "", message: "" });
+      setShowSuccess(true); // ✅ Show success after submission
+    }, 1500);
   };
 
   const formFields = [
@@ -411,6 +413,11 @@ export const ContactFormSection = (): JSX.Element => {
           >
             {isSubmitting ? '' : 'Send To Us'}
           </button>
+          {showSuccess && (
+            <p style={{ color: "#10B981", textAlign: "center", marginTop: "20px", fontFamily: "Poppins, sans-serif" }}>
+              ✅ Thank you! Your message has been sent.
+            </p>
+          )}
         </form>
       </div>
 

@@ -2,6 +2,7 @@ import { ArrowRightIcon } from "lucide-react";
 import React from "react";
 import { Badge } from "../../../../components/ui/badge";
 import { Button } from "../../../../components/ui/button";
+import { Link } from "react-router-dom";
 
 export const AboutUsSection = (): JSX.Element => {
   return (
@@ -21,24 +22,26 @@ export const AboutUsSection = (): JSX.Element => {
               <span className="text-white">Transforming Ideas</span> into{" "}
               <span className="hover:text-[#ed1c24] transition-colors duration-300 cursor-default">
                 Intelligent Digital Experiences
-              </span>.
+              </span>
+              .
             </h2>
 
             <div className="font-normal text-white text-sm sm:text-base lg:text-xl leading-relaxed [font-family:'Poppins',Helvetica] space-y-6 mb-12 stagger-children">
               <p className="hover:text-[#ffffffcc] transition-colors duration-300">
-                At Integrated SoftTech, we don&apos;t just build software—we engineer
-                experiences. Born in the heart of Dubai&apos;s innovation ecosystem,
-                our mission is to bridge business goals with cutting-edge digital
-                solutions. From intuitive mobile apps to enterprise-grade SaaS
-                platforms and intelligent AI systems, we design with purpose and
-                develop with precision.
+                At Integrated SoftTech, we don&apos;t just build software—we
+                engineer experiences. Born in the heart of Dubai&apos;s
+                innovation ecosystem, our mission is to bridge business goals
+                with cutting-edge digital solutions. From intuitive mobile apps
+                to enterprise-grade SaaS platforms and intelligent AI systems,
+                we design with purpose and develop with precision.
               </p>
               <p className="hover:text-[#ffffffcc] transition-colors duration-300">
-                What sets us apart isn&apos;t just our technical expertise—it&apos;s
-                our mindset. We partner with forward-thinking brands to transform
-                complex challenges into elegant, scalable solutions. Whether
-                you&#39;re a startup shaping your MVP or an enterprise ready to
-                modernize, we bring clarity to complexity and agility to execution.
+                What sets us apart isn&apos;t just our technical
+                expertise—it&apos;s our mindset. We partner with
+                forward-thinking brands to transform complex challenges into
+                elegant, scalable solutions. Whether you&#39;re a startup
+                shaping your MVP or an enterprise ready to modernize, we bring
+                clarity to complexity and agility to execution.
               </p>
               <p className="hover:text-[#ffffffcc] transition-colors duration-300">
                 <span className="text-gradient">Driven by curiosity.</span>{" "}
@@ -46,7 +49,7 @@ export const AboutUsSection = (): JSX.Element => {
                 <span className="text-gradient">Powered by passion.</span>
               </p>
             </div>
-
+           <Link to="/about">
             <Button
               variant="outline"
               className="rounded-[20px] border-white text-black font-bold px-6 py-4 h-auto text-sm sm:text-base hover:bg-white hover:text-black transition-all duration-300 hover-lift hover-glow group"
@@ -54,6 +57,7 @@ export const AboutUsSection = (): JSX.Element => {
               Learn More
               <ArrowRightIcon className="ml-4 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
             </Button>
+            </Link>
           </div>
 
           {/* Right Content - Logo */}

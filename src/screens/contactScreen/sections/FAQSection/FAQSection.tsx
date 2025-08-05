@@ -247,9 +247,7 @@ export const FAQSection = (): JSX.Element => {
           Find quick solutions to common questions about our services
         </p>
 
-        <button className="view-more-btn">
-          View More
-        </button>
+        
       </div>
 
       {/* Right side - FAQ Scrollable Container */}

@@ -202,12 +202,15 @@ export const HeroSection = (): JSX.Element => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-[30px] ml-0 sm:ml-6 lg:ml-[44px]">
-              <Button className="w-full sm:w-[60px] lg:w-[140px] h-[45px] sm:h-[48px] lg:h-[50px] bg-[#5b4e48] rounded-[10px] text-white hover:bg-[#4a3f3a]">
-                Get in Touch
-              </Button>
+              <Link to="/contact">
+  <Button className="w-full sm:w-[60px] lg:w-[140px] h-[45px] sm:h-[48px] lg:h-[50px] bg-[#5b4e48] rounded-[10px] text-white hover:bg-[#4a3f3a]">
+    Get in Touch
+  </Button>
+</Link>       <Link to="/about">
               <Button className="w-full sm:w-[60px] lg:w-[140px] h-[45px] sm:h-[48px] lg:h-[50px] bg-[#ed1c24] rounded-[10px] text-white hover:bg-[#d01920]">
                 Learn More
               </Button>
+              </Link>
             </div>
           </div>
         </div>

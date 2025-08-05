@@ -1,6 +1,7 @@
 import { ArrowUpRightIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../../../components/ui/button";
+import { Link } from "react-router-dom";
 
 export const FeaturesSection = (): JSX.Element => {
   return (
@@ -13,11 +14,12 @@ export const FeaturesSection = (): JSX.Element => {
             <span className="text-white hover:text-[#ffffffcc] transition-colors duration-300"> with </span>
             <span className="text-[#a6a9a8] hover:text-[#ed1c24] transition-colors duration-300">Integrated SoftTech</span>
           </h2>
-
+          <Link to="/contact">
           <Button className="bg-[#ec0000] hover:bg-[#ec0000]/90 text-[#080a0b] rounded-[10px] px-4 sm:px-6 py-2 sm:py-2.5 font-bold font-['Poppins',Helvetica] text-sm sm:text-base hover-lift hover-glow transition-all duration-300 group animate-scale-in">
             <span>Contact Us</span>
             <ArrowUpRightIcon className="ml-2 h-5 w-5 sm:h-6 sm:w-6 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
           </Button>
+          </Link>
         </div>
 
         <div className="relative w-full max-w-[350px] sm:max-w-[400px] lg:max-w-[486px] h-[300px] sm:h-[350px] lg:h-[419px] mt-6 lg:mt-0 animate-slide-in-right">
