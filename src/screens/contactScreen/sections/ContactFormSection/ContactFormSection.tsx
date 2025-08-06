@@ -119,14 +119,15 @@ export const ContactFormSection = (): JSX.Element => {
   ];
 
   const profileImages = [
-    { src: "/ellipse-20.png", position: { top: "10%", right: "15%" } },
-    { src: "/ellipse-21.png", position: { top: "25%", right: "5%" } },
-    { src: "/ellipse-26.png", position: { top: "45%", right: "10%" } },
+    { src: "/ellipse-28.jpg", position: { top: "10%", right: "15%" } },
+    { src: "/ellipse-27.jpg", position: { top: "25%", right: "15%" } },
+    { src: "/ellipse-22.jpg", position: { top: "45%", right: "30%" } },
     { src: "/ellipse-23.png", position: { bottom: "30%", right: "20%" } },
     { src: "/ellipse-24.png", position: { bottom: "15%", right: "8%" } },
-    { src: "/ellipse-25.png", position: { top: "35%", left: "8%" } },
+    { src: "/ellipse-29.jpg", position: { top: "35%", left: "8%" } },
     { src: "/ellipse-26.png", position: { bottom: "25%", left: "15%" } },
     { src: "/ellipse-20.png", position: { top: "20%", left: "12%" } },
+    { src: "/ellipse-28.jpg", position: { top: "40%", left: "40%" } },
   ];
 
   return (

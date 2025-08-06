@@ -60,8 +60,8 @@ export const HomeScreen = (): JSX.Element => {
             transform: `translateY(${scrollY * 0.5}px)`,
           }}
         >
-          <div className="absolute w-[300px] h-[300px] bg-gradient-to-r from-[#ed1c24]/10 to-[#8b0000]/10 rounded-full blur-3xl top-1/4 left-1/4 animate-float" />
-          <div className="absolute w-[400px] h-[400px] bg-gradient-to-r from-[#ed1c24]/5 to-[#8b0000]/5 rounded-full blur-3xl bottom-1/4 right-1/4 animate-float" style={{animationDelay: '1s'}} />
+          <div className="absolute w-[200px] h-[200px] bg-gradient-to-r from-[#ed1c24]/5 to-[#8b0000]/5 rounded-full blur-3xl top-1/4 left-1/4 animate-float" />
+          <div className="absolute w-[200px] h-[200px] bg-gradient-to-r from-[#ed1c24]/5 to-[#8b0000]/5 rounded-full blur-3xl bottom-1/4 right-1/4 animate-float" />
         </div>
 
         {/* Hero Section with Logo */}
@@ -157,7 +157,7 @@ export const HomeScreen = (): JSX.Element => {
           <ServiceHighlightsSection />
           <ServicesSection />
           <div 
-            className="absolute w-[300px] h-[180px] sm:w-[400px] sm:h-[240px] lg:w-[577px] lg:h-[347px] left-[-200px] sm:left-[-300px] lg:left-[-414px] rounded-[288.5px/173.5px] -rotate-90 blur-[50px] sm:blur-[80px] lg:blur-[107.3px] bg-[linear-gradient(349deg,rgba(0,0,0,1)_0%,rgba(101,0,0,1)_64%,rgba(163,31,73,1)_100%)] animate-gradient transform-gpu"
+            className="absolute w-[300px] h-[180px] sm:w-[400px] sm:h-[240px] lg:w-[577px] lg:h-[347px] left-[-200px] sm:left-[-300px] lg:left-[-414px] rounded-[288.5px/173.5px] -rotate-90 blur-[50px] sm:blur-[80px] lg:blur-[60.3px] bg-[linear-gradient(349deg,rgba(0,0,0,1)_0%,rgba(101,0,0,1)_64%,rgba(163,31,73,1)_100%)] animate-gradient transform-gpu"
             style={{
               transform: `translateY(${scrollY * -0.2}px) rotate(${-90 - scrollY * 0.03}deg)`,
             }}
@@ -174,7 +174,7 @@ export const HomeScreen = (): JSX.Element => {
               ? 'translateY(0) scale(1)' 
               : 'translateY(80px) scale(0.95)',
             opacity: visibleElements.has('testimonials-section') ? 1 : 0,
-            transition: 'all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) '
+            transition: 'all  cubic-bezier(0.25, 0.46, 0.45, 0.94) '
           }}
         >
           <div className="w-full max-w-none mx-auto">

@@ -5,22 +5,22 @@ import { Card, CardContent } from "../../../../components/ui/card";
 export const NewsletterSection = (): JSX.Element => {
   const values = [
     {
-      value: ".  Integrity",
+      value: " Integrity",
       description:
         "We believe in honesty, transparency, and building trust with our clients.",
     },
     {
-      value: ".  Innovation",
+      value: " Innovation",
       description:
         "Constantly pushing the boundaries of technology to create groundbreaking solutions.",
     },
     {
-      value: ".  Collaboration",
+      value: " Collaboration",
       description:
         "Working together with our clients to deliver the best results.",
     },
     {
-      value: ".  Excellence",
+      value: "Excellence",
       description:
         "Delivering top-quality products and services that exceed client expectations.",
     },
@@ -42,20 +42,22 @@ export const NewsletterSection = (): JSX.Element => {
       <CardContent className="p-0 mb-4">
         <div className="font-['Poppins',Helvetica] font-normal text-white text-[15px] leading-[25.8px] space-y-2">
           {values.map((item, index) => (
-            <div
-              key={index}
-              className={`animate-fade-in-up animate-delay-${
-                500 + index * 100
-              } hover:text-[#ff6b6b] transition-colors duration-300`}
-            >
-              <span className="font-medium hover:text-gradient-animate">
-                {item.value}  :
-              </span>{" "}
-              <span className="hover:text-[#ffffff99]">
-                {item.description}
-              </span>
-            </div>
-          ))}
+  <div
+    key={index}
+    className={`animate-fade-in-up animate-delay-${500 + index * 100} transition-colors duration-300`}
+  >
+    {/* ✅ Red color and larger font for values */}
+    <span className="text-red-500 text-[17px] font-semibold">
+      {item.value} :
+    </span>{" "}
+    
+    {/* ✅ Keep description normal */}
+    <span className="text-white">
+      {item.description}
+    </span>
+  </div>
+))}
+
         </div>
       </CardContent>
     </Card>

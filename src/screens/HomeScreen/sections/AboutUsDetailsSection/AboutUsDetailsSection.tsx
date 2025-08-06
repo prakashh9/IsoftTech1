@@ -60,7 +60,7 @@ export const AboutUsDetailsSection = (): JSX.Element => {
           </div>
 
           <div className="flex flex-col sm:flex-row lg:flex-row gap-4 sm:gap-6 justify-center lg:justify-end animate-slide-in-right lg:flex-shrink-0 lg:min-w-[400px]">
-            <img className="h-[250px] sm:h-[350px] lg:h-[478px] w-full sm:w-[250px] lg:w-[300px] object-cover rounded-lg hover-lift hover-glow transition-all duration-500 animate-fade-in" alt="Team members" src="/mask-group-4.png" />
+            <img className="h-[250px] sm:h-[350px] lg:h-[478px] w-full sm:w-[250px] lg:w-[300px] object-cover rounded-lg hover-lift hover-glow transition-all duration-500 animate-fade-in" alt="Team members" src="/mask-group-9.png" />
             <img className="h-[250px] sm:h-[280px] lg:h-[353px] w-full sm:w-[250px] lg:w-[250px] object-cover rounded-lg hover-lift hover-glow transition-all duration-500 animate-fade-in" alt="Office space" src="/mask-group-5.png" style={{animationDelay: '0.3s'}} />
           </div>
         </div>

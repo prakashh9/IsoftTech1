@@ -57,48 +57,47 @@ export const HeroSection = (): JSX.Element => {
 
           {/* Navbar */}
           <>
-  {/* Show only on small screens (mobile): Hamburger icon only */}
-  <div className="flex sm:hidden items-center justify-end h-[55px] px-4">
-    <button
-      className="text-white ml-auto"
-      onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-    >
-      {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-    </button>
-  </div>
+            {/* Show only on small screens (mobile): Hamburger icon only */}
+            <div className="flex sm:hidden items-center justify-end h-[55px] px-4">
+              <button
+                className="text-white ml-auto"
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              >
+                {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              </button>
+            </div>
 
-  {/* Show full styled navbar only on sm and up */}
-  <div
-    className="
+            {/* Show full styled navbar only on sm and up */}
+            <div
+              className="
       hidden sm:flex flex-1 min-w-[240px] h-[60px]
       bg-[#ffffff0d] border border-[#ffffff1a]
       backdrop-blur-[30px] rounded-[40px]
       items-center justify-end px-6
     "
-  >
-    {/* Desktop Menu */}
-    <div className="hidden md:flex items-center gap-4 lg:gap-6">
-      {menuItems.map((item, index) => (
-        <React.Fragment key={item.name}>
-          <Link
-            to={item.path}
-            className={`text-sm font-medium font-poppins transition-all duration-300 ${
-              location.pathname === item.path
-                ? "text-white font-semibold"
-                : "text-[#ffffff80] hover:text-white"
-            }`}
-          >
-            {item.name}
-          </Link>
-          {index < menuItems.length - 1 && (
-            <ChevronRight size={18} className="text-[#ffffff60]" />
-          )}
-        </React.Fragment>
-      ))}
-    </div>
-  </div>
-</>
-
+            >
+              {/* Desktop Menu */}
+              <div className="hidden md:flex items-center gap-4 lg:gap-6">
+                {menuItems.map((item, index) => (
+                  <React.Fragment key={item.name}>
+                    <Link
+                      to={item.path}
+                      className={`text-sm font-medium font-poppins transition-all duration-300 ${
+                        location.pathname === item.path
+                          ? "text-white font-semibold"
+                          : "text-[#ffffff80] hover:text-white"
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+                    {index < menuItems.length - 1 && (
+                      <ChevronRight size={18} className="text-[#ffffff60]" />
+                    )}
+                  </React.Fragment>
+                ))}
+              </div>
+            </div>
+          </>
 
           {/* Mobile Menu */}
           {isMobileMenuOpen && (
@@ -216,13 +215,14 @@ export const HeroSection = (): JSX.Element => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-[30px] ml-0 sm:ml-6 lg:ml-[44px]">
               <Link to="/contact">
-  <Button className="w-full sm:w-[60px] lg:w-[140px] h-[45px] sm:h-[48px] lg:h-[50px] bg-[#5b4e48] rounded-[10px] text-white hover:bg-[#4a3f3a]">
-    Get in Touch
-  </Button>
-</Link>       <Link to="/about">
-              <Button className="w-full sm:w-[60px] lg:w-[140px] h-[45px] sm:h-[48px] lg:h-[50px] bg-[#ed1c24] rounded-[10px] text-white hover:bg-[#d01920]">
-                Learn More
-              </Button>
+                <Button className="w-full sm:w-[60px] lg:w-[140px] h-[45px] sm:h-[48px] lg:h-[50px] bg-[#5b4e48] rounded-[10px] text-white hover:bg-[#4a3f3a]">
+                  Get in Touch
+                </Button>
+              </Link>{" "}
+              <Link to="/about">
+                <Button className="w-full sm:w-[60px] lg:w-[140px] h-[45px] sm:h-[48px] lg:h-[50px] bg-[#ed1c24] rounded-[10px] text-white hover:bg-[#d01920]">
+                  Learn More
+                </Button>
               </Link>
             </div>
           </div>
