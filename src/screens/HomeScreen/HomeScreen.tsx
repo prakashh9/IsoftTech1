@@ -114,7 +114,7 @@ export const HomeScreen = (): JSX.Element => {
               ? 'translateY(0) scale(1)' 
               : 'translateY(80px) scale(0.9)',
             opacity: visibleElements.has('about-section') ? 1 : 0,
-            transition: 'all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) '
+            transition: 'all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) '
           }}
         >
           <AboutUsSection />
@@ -135,7 +135,7 @@ export const HomeScreen = (): JSX.Element => {
               ? 'translateY(0) scale(1)' 
               : 'translateY(60px) scale(0.95)',
             opacity: visibleElements.has('innovation-section') ? 1 : 0,
-            transition: 'all 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) '
+            transition: 'all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) '
           }}
         >
           <InnovationQuoteSection />
@@ -151,7 +151,7 @@ export const HomeScreen = (): JSX.Element => {
               ? 'translateY(0) scale(1)' 
               : 'translateY(100px) scale(0.9)',
             opacity: visibleElements.has('services-section') ? 1 : 0,
-            transition: 'all 1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) '
+            transition: 'all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) '
           }}
         >
           <ServiceHighlightsSection />
@@ -174,7 +174,7 @@ export const HomeScreen = (): JSX.Element => {
               ? 'translateY(0) scale(1)' 
               : 'translateY(80px) scale(0.95)',
             opacity: visibleElements.has('testimonials-section') ? 1 : 0,
-            transition: 'all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) '
+            transition: 'all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) '
           }}
         >
           <div className="w-full max-w-none mx-auto">
